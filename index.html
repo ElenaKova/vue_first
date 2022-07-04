@@ -13,13 +13,16 @@
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 
     <div id="app">
-       <!-- <input type="text" v-on:input="increament($event.target.value)"> -->
-        <p>Message: {{ fullMessage }}</p>
-        
+        <!-- <button v-on:click="show = !show">Hide/show</button>
+       <p v-if="show">Some text</p>
+       <p v-else>Other</p> -->
+        <p>Country and their Capitals</p>
+        <ul>
+            <li v-for="name in name_of_country">Country: {{ name.country }}; Capital:
+                {{ name.capital}}</li>
+        </ul>
+
     </div>
-
-
-
     <script src="js/main.js"></script>
 
 
