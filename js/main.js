@@ -6,6 +6,9 @@ Vue.filter('First_lettersUpperCase', function (value) {
     });
 });
 
+Vue.filter('currency', function (value) {
+    return '$' + value.toFixed(2).replace(/(d)(?=(ddd)+(?!d))/g, "$1,");
+});
 
 
 let app = new Vue({
@@ -13,6 +16,8 @@ let app = new Vue({
     data: {
         show: false,
         title: 'Countries and their Capitals',
+        number: 25000,
+        date: '10-02-1999',
         name_of_country: [{
                 country: 'Albania',
                 capital: 'Tirana'
@@ -86,6 +91,18 @@ let app = new Vue({
     filters: {
         lowerCase(value) {
             return value.toLowerCase();
+        },
+
+        dateFilter(value) {
+            let monthNames = [
+                "January", "February", "March",
+                "April", "May", "June", "July",
+                "August", "September", "October",
+                "November", "December"
+            ];
+            let dateArr = value.split("-");
+            dateArr[1] = monthNames[parseInt(dateArr[1]) - 1];
+            return dateArr[0] + " " + dateArr[1] + " " + dateArr[2] + " year";
         }
     }
 });

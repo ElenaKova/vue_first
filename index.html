@@ -16,11 +16,13 @@
         <!-- <button v-on:click="show = !show">Hide/show</button>
        <p v-if="show">Some text</p>
        <p v-else>Other</p> -->
-        <h1>{{title | lowerCase | First_lettersUpperCase}}</h1>
+        <!-- <h1>{{title | lowerCase | First_lettersUpperCase}}</h1>
         <ul>
             <li v-for="name in name_of_country" v-if="name.country != 'Austria'">Country: {{ name.country }}; Capital:
                 {{ name.capital}}</li>
-        </ul>
+        </ul> -->
+        <p>{{number | currency}}</p>
+        {{ date | dateFilter }}
 
     </div>
     <script src="js/main.js"></script>
