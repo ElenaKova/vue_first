@@ -16,9 +16,9 @@
         <!-- <button v-on:click="show = !show">Hide/show</button>
        <p v-if="show">Some text</p>
        <p v-else>Other</p> -->
-        <p>Country and their Capitals</p>
+        <h1>{{title | lowerCase | First_lettersUpperCase}}</h1>
         <ul>
-            <li v-for="name in name_of_country">Country: {{ name.country }}; Capital:
+            <li v-for="name in name_of_country" v-if="name.country != 'Austria'">Country: {{ name.country }}; Capital:
                 {{ name.capital}}</li>
         </ul>
 

@@ -1,9 +1,19 @@
+Vue.filter('First_lettersUpperCase', function (value) {
+    if (!value) return '';
+    value = value.toString();
+    return value.replace(/\b\w/g, function (n) {
+        return n.toUpperCase();
+    });
+});
+
+
+
 let app = new Vue({
     el: '#app',
     data: {
         show: false,
-        name_of_country: [
-            {
+        title: 'Countries and their Capitals',
+        name_of_country: [{
                 country: 'Albania',
                 capital: 'Tirana'
             },
@@ -67,5 +77,15 @@ let app = new Vue({
     },
     methods: {
 
+    },
+    computed: {
+        // ShowMess() {
+        //     return this.title.toUpperCase();
+        // }
+    },
+    filters: {
+        lowerCase(value) {
+            return value.toLowerCase();
+        }
     }
 });
