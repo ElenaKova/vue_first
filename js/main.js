@@ -2,7 +2,7 @@
 var app = new Vue({
     el: '#app',
     data: {
-        value: 1
+        message: 'Please reverse me'
     },
     methods: {
         increament(value) {
@@ -12,8 +12,8 @@ var app = new Vue({
         }
     },
     computed: {
-        doubleValue() {
-           return  this.value * 2; 
+        reverseMessage: function() {
+           return  this.message.split('').reverse().join(''); 
         } 
     }
 });
