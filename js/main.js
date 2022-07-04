@@ -2,12 +2,13 @@
 var app = new Vue({
     el: '#app',
     data: {
-        message: 'Hello Vue!',
-        styleCSS: ''
+        value: '',
+        doubleValue: ''
     },
     methods: {
-        changeTex() {
-            this.message = 'new';
+        increament(value) {
+            this.value = value;
+            this.doubleValue = value*2;
         }
     }
 });
