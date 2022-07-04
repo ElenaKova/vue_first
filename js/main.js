@@ -2,13 +2,18 @@
 var app = new Vue({
     el: '#app',
     data: {
-        value: '',
-        doubleValue: ''
+        value: 1
     },
     methods: {
         increament(value) {
             this.value = value;
-            this.doubleValue = value*2;
+            if (value == 25) 
+                alert(' number is 25');
         }
+    },
+    computed: {
+        doubleValue() {
+           return  this.value * 2; 
+        } 
     }
 });
