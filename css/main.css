@@ -25,3 +25,18 @@
     font-size: 1.1em;
 
 }
+.group-count{
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+}
+
+#components-count{
+    width: 10%;
+    margin: 10px 5px;
+    background: #e5ff72;
+    border: 2px solid rgb(200, 226, 0);
+    border-radius: 10px;
+    padding: 0.5px 0.3% 0.5px;
+    color: #474747;
+}
