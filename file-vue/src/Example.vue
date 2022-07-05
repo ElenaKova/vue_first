@@ -1,9 +1,8 @@
 <template>
     <div>
         <h1>Text</h1>
-        <app-input>
-            
-        </app-input> </div>
+        <app-input></app-input>
+        </div>
 </template>
 
 <script>

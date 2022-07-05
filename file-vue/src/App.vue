@@ -1,6 +1,9 @@
 <template>
   <div id="app">
-    <app-example></app-example>
+    <app-Header></app-Header>
+    <app-Block></app-Block>
+    <app-Block></app-Block>
+    <app-Block></app-Block>
   </div>
 </template>
 
