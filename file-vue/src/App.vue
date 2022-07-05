@@ -1,9 +1,7 @@
 <template>
   <div id="app">
-    <app-Header></app-Header>
-    <app-Block></app-Block>
-    <app-Block></app-Block>
-    <app-Block></app-Block>
+    <app-Example></app-Example>
+    <!-- <app-Field></app-Field> -->
   </div>
 </template>
 

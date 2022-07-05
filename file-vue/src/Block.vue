@@ -1,11 +1,11 @@
-<template>
+<!-- <template>
     <div id="block">
         <p>text-area</p>
     </div>
 
 </template>
 
-<!-- <script>
+<script>
 export default {
     data() {
         return {
@@ -13,7 +13,7 @@ export default {
         }
     }
 }
-</script> -->
+</script>
 
 <style>
 
@@ -31,4 +31,4 @@ export default {
 }
 
 
-</style>
+</style> -->

@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
 <div id="header">
     <h1>{{title}}</h1>
 </div>
@@ -22,4 +22,5 @@ export default {
     text-align: center;
     width: 100%;
 }
-</style>
+
+</style> -->
