@@ -1,17 +1,12 @@
-<!-- <template>
-<div id="header">
-    <h1>{{title}}</h1>
-</div>
-
+<template>
+    <div id="header">
+        <h1>{{text}}</h1>
+    </div> 
 </template>
 
 <script>
 export default {
-    data() {
-        return {
-            title: 'Some list'
-        }
-    }
+    props: ['text'] //понять как должен передаваться параметр, от куда приходит значение (№9)
 }
 </script>
 
@@ -23,4 +18,4 @@ export default {
     width: 100%;
 }
 
-</style> -->
+</style>

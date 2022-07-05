@@ -1,15 +1,18 @@
-<!-- <template>
+<template>
     <div id="block">
-        <p>text-area</p>
+        <p>{{mess}}</p>
+        <hr>
+        <p>{{info}}</p>
     </div>
 
 </template>
 
 <script>
 export default {
+    props: ['mess', 'info'],
     data() {
         return {
-            title: ''
+            
         }
     }
 }
@@ -17,7 +20,12 @@ export default {
 
 <style>
 
-
+hr {
+    display: block;
+    height: 0;
+    border-bottom: 2px solid #cf2300;
+    margin: 10px 0;
+}
 #block {
         margin: 20px 25%;
         background: #e5ff72;
@@ -31,4 +39,4 @@ export default {
 }
 
 
-</style> -->
+</style>
