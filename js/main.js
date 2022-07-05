@@ -10,38 +10,38 @@
 //     return '$' + value.toFixed(2).replace(/(d)(?=(ddd)+(?!d))/g, "$1,");
 // });
 
-Vue.component('app-name_of_country', {
-    data: function () {
-        return {
-            name_of_country: [{
-                    country: 'Albania',
-                    capital: 'Tirana'
-                },
-                {
-                    country: 'Andorra',
-                    capital: 'Andorra la Vella'
-                },
-                {
-                    country: 'Austria',
-                    capital: 'Vienna'
-                },
-                {
-                    country: 'Belarus',
-                    capital: 'Minsk'
-                },
-                {
-                    country: 'Belgium',
-                    capital: 'Brussels'
-                },
-                {
-                    country: 'Bosnia and Herzegovina',
-                    capital: 'Sarajevo'
-                }
-            ]
-        };
-    },
-    template: '<div><div class="list-country" v-for="name in name_of_country"> <p> Country: {{name.country}} <br> Capital: {{ name.capital}} </p> </div></div>'
-});
+// Vue.component('app-name_of_country', {
+//     data: function () {
+//         return {
+//             name_of_country: [{
+//                     country: 'Albania',
+//                     capital: 'Tirana'
+//                 },
+//                 {
+//                     country: 'Andorra',
+//                     capital: 'Andorra la Vella'
+//                 },
+//                 {
+//                     country: 'Austria',
+//                     capital: 'Vienna'
+//                 },
+//                 {
+//                     country: 'Belarus',
+//                     capital: 'Minsk'
+//                 },
+//                 {
+//                     country: 'Belgium',
+//                     capital: 'Brussels'
+//                 },
+//                 {
+//                     country: 'Bosnia and Herzegovina',
+//                     capital: 'Sarajevo'
+//                 }
+//             ]
+//         };
+//     },
+//     template: '<div><div class="list-country" v-for="name in name_of_country"> <p> Country: {{name.country}} <br> Capital: {{ name.capital}} </p> </div></div>'
+// });
 
 let app = new Vue({
     el: '#app',
@@ -50,6 +50,7 @@ let app = new Vue({
         title: 'Countries and their Capitals',
         number: 25000,
         date: '10-02-1999',
+
         //     name_of_country: [{
         //             country: 'Albania',
         //             capital: 'Tirana'
@@ -74,44 +75,79 @@ let app = new Vue({
         //             country: 'Bosnia and Herzegovina',
         //             capital: 'Sarajevo'
         //         }
-        //         // Bulgaria: 'Sofia',
-        //         // croatia: 'Zagreb',
-        //         // czechia :'Prague',
-        //         // Denmark :'copenhagen',
-        //         // Estonia :'Tallinn',
-        //         // Finland :'Helsinki',
-        //         // France :'Paris',
-        //         // Germany: 'Berlin',
-        //         // Greece :'Athens',
-        //         // Hungary: 'Budapest',
-        //         // Iceland: 'Reykjavik',
-        //         // Ireland: 'Dublin',
-        //         // Italy :'Rome',
-        //         // Latvia :'Riga',
-        //         // Liechtenstein :'Vaduz',
-        //         // Lithuania: 'Vilnius',
-        //         // Luxembourg: 'Luxembourg',
-        //         // Malta: 'Valletta',
-        //         // Moldova: 'chisinau',
-        //         // Monaco :'Monaco',
-        //         // Montenegro: 'Podgorica',
-        //         // Netherlands: 'Amsterdam',
-        //         // North Macedonia: 'Skopje',
-        //         // Norway :'Oslo',
-        //         // Poland :'Warsaw',
-        //         // Portugal: 'Lisbon',
-        //         // Romania: 'Bucharest',
-        //         // San Marino: 'San Marino',
-        //         // Serbia: 'Belgrade',
-        //         // Slovakia: 'Bratislava',
-        //         // Slovenia :'Ljubljana',
-        //         // Spain :'Madrid',
-        //         // Sweden: 'Stockholm',
-        //         // Switzerland: 'Bern',
-        //         // Ukraine:'Kyiv',
-        //         // United: 'Kingdom London'
+        // Bulgaria: 'Sofia',
+        // croatia: 'Zagreb',
+        // czechia :'Prague',
+        // Denmark :'copenhagen',
+        // Estonia :'Tallinn',
+        // Finland :'Helsinki',
+        // France :'Paris',
+        // Germany: 'Berlin',
+        // Greece :'Athens',
+        // Hungary: 'Budapest',
+        // Iceland: 'Reykjavik',
+        // Ireland: 'Dublin',
+        // Italy :'Rome',
+        // Latvia :'Riga',
+        // Liechtenstein :'Vaduz',
+        // Lithuania: 'Vilnius',
+        // Luxembourg: 'Luxembourg',
+        // Malta: 'Valletta',
+        // Moldova: 'chisinau',
+        // Monaco :'Monaco',
+        // Montenegro: 'Podgorica',
+        // Netherlands: 'Amsterdam',
+        // North Macedonia: 'Skopje',
+        // Norway :'Oslo',
+        // Poland :'Warsaw',
+        // Portugal: 'Lisbon',
+        // Romania: 'Bucharest',
+        // San Marino: 'San Marino',
+        // Serbia: 'Belgrade',
+        // Slovakia: 'Bratislava',
+        // Slovenia :'Ljubljana',
+        // Spain :'Madrid',
+        // Sweden: 'Stockholm',
+        // Switzerland: 'Bern',
+        // Ukraine:'Kyiv',
+        // United: 'Kingdom London'
         //     ]
     },
+    components: {
+        'app-name_of_country': {
+            data: function () {
+                return {
+                    name_of_country: [{
+                            country: 'Albania',
+                            capital: 'Tirana'
+                        },
+                        {
+                            country: 'Andorra',
+                            capital: 'Andorra la Vella'
+                        },
+                        {
+                            country: 'Austria',
+                            capital: 'Vienna'
+                        },
+                        {
+                            country: 'Belarus',
+                            capital: 'Minsk'
+                        },
+                        {
+                            country: 'Belgium',
+                            capital: 'Brussels'
+                        },
+                        {
+                            country: 'Bosnia and Herzegovina',
+                            capital: 'Sarajevo'
+                        }
+                    ]
+                };
+            },
+            template: '<div><div class="list-country" v-for="name in name_of_country"> <p> Country: {{name.country}} <br> Capital: {{ name.capital}} </p> </div></div>'
+        }
+    },
+
     methods: {
 
     },
